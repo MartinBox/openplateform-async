@@ -9,5 +9,6 @@
     <module>openplateform-async-jdeferred</module>
     <module>openplateform-async-simple</module>
     <module>openplateform-async-disruptor</module>
+    <module>openplateform-async-netty</module>
   </modules>
 </project>
