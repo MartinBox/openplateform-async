@@ -10,5 +10,6 @@
     <module>openplateform-async-simple</module>
     <module>openplateform-async-disruptor</module>
     <module>openplateform-async-netty</module>
+    <module>openplateform-async-concurrent</module>
   </modules>
 </project>
