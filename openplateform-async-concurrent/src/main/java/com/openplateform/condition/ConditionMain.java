@@ -5,10 +5,9 @@ package com.openplateform.condition;
  */
 public class ConditionMain {
     public static void main(String[] args) throws InterruptedException {
-        ConditionTest conditionTest = new ConditionTest(5);
+        final ConditionTest conditionTest = new ConditionTest(5);
         for (int i = 0; i < 20; i++) {
             new Thread(new Runnable() {
-                @Override
                 public void run() {
                     try {
                         conditionTest.add(System.currentTimeMillis());
@@ -19,7 +18,6 @@ public class ConditionMain {
             }).start();
 
             new Thread(new Runnable() {
-                @Override
                 public void run() {
                     try {
                         conditionTest.remove();
